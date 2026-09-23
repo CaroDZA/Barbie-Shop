@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario cliente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="home.html" class="volver"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+        <h1>CLIENTE</h1>
+        <p id="mensajeGuardado" class="mensaje-exito"></p>
+        <form id="formulario" action="formulario">
+            <input type="hidden" id="idCliente" name="idCliente">
+            <div class="campo">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Nombre completo">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-calendar"></i>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" placeholder="Fecha de nacimiento">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-inbox"></i>
+                <input type="email" name="correo" id="correo" placeholder="Correo" readonly>
+            </div>
+            <div class="campo">
+                <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+    <script src="Scrips/scrip.js"></script>
+    <script src="Scrips/menu.js"></script>
+
+</body>
+
+</html>

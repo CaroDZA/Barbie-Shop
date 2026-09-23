@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ff69b4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 520px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+    color: #e0218a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.volver:hover {
+    color: #ff69b4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.campo input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #ff69b4;
+    box-shadow: 0 0 0 2px rgba(177, 178, 249, 0.3);
+}
+
+.campo i {
+    color: #e0218a;
+    width: 16px;
+}
+
+.campo button {
+    width: 100%;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e0218a;
+    color: #0f0f0f;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fd9ee1;
+}
+
+.acciones-form {
+    display: flex;
+    gap: 10px;
+}
+
+.acciones-form button {
+    flex: 1;
+    font-weight: bold;
+}
+
+button.secundario {
+    background: #f1f1f1;
+    color: #555;
+}
+
+button.secundario:hover {
+    background: #e2e2e2;
+}
+
+.mensaje-exito {
+    display: none;
+    text-align: center;
+    background: #ffe1f0;
+    color: #e0218a;
+    border: 1px solid #ffb6da;
+    border-radius: 6px;
+    padding: 8px;
+    margin: -8px 0 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mensaje-exito.visible {
+    display: block;
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    color: #e0218a;
+}
+
+.acciones-tabla {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.btn-editar,
+.btn-eliminar {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-editar {
+    border: none;
+    background: #e0218a;
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background: #fd9ee1;
+}
+
+.btn-eliminar {
+    border: 1px solid #f3b6c8;
+    background: #fff0f4;
+    color: #c0264d;
+}
+
+.btn-eliminar:hover {
+    background: #ffd9e3;
+    border-color: #e88ba5;
+}

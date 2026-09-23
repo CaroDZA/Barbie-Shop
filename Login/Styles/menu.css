@@ -1,0 +1,113 @@
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 25px 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.menu-bienvenida {
+    padding-bottom: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffd6ec;
+}
+
+.menu-bienvenida-titulo {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-bienvenida-marca {
+    margin: 4px 0 8px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e0218a;
+    letter-spacing: 1px;
+    line-height: 1;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+}
+
+.menu-bienvenida-nombre {
+    margin: 6px 0 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #444;
+    word-break: break-word;
+    line-height: 1.2;
+}
+
+.menu-bienvenida-rol {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: #ff69b4;
+    background: #ffe1f0;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.menu-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.menu-lista li a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    font-size: 1rem;
+    border-left: 3px solid transparent;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    margin-bottom: 4px;
+}
+
+.menu-lista li a:hover,
+.menu-lista li a.activo {
+    background: #ffe0f0;
+    color: #e0218a;
+    border-left: 3px solid #ff69b4;
+}
+
+.menu-cerrar-sesion {
+    width: 100%;
+    padding: 12px;
+    background: #fff0f4;
+    color: #c0264d;
+    border: 1px solid #f3b6c8;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-top: 15px;
+}
+
+.menu-cerrar-sesion:hover {
+    background: #ffd9e3;
+}
+
+body.con-menu {
+    padding-left: 260px !important;
+    box-sizing: border-box;
+}

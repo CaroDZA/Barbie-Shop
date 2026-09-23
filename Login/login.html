@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario cliente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>INICIAR SESIÓN</h1>
+        <form id="formulario" action="formulario">
+            <div class="campo">
+                <i class="fa-solid fa-inbox"></i>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                <i class="fa-solid fa-eye" id="toggleContraseña"></i>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="enlace">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+    </div>
+
+    <script src="Scrips/login.js"></script>
+</body>
+
+</html>

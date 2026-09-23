@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Realizadas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/ventasRealizadas.css">
+    <link rel="stylesheet" href="Styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="home.html" class="volver"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+        <h1>VENTAS REALIZADAS</h1>
+        <p id="mensajeGuardado" class="mensaje-exito"></p>
+
+        <table id="tablaVentas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                    <th>Total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="detalleVenta" class="detalle-venta" hidden>
+            <h2>Detalle de la Compra <span id="idVentaDetalle"></span></h2>
+            <table id="tablaDetalles">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Valor Unitario</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="total-detalle">
+                <strong>Total: $<span id="totalDetalle">0</span></strong>
+            </div>
+            <button id="btnCerrarDetalle" class="btn-secundario">Cerrar Detalle</button>
+        </div>
+    </div>
+
+    <script src="Scrips/ventasRealizadas.js"></script>
+    <script src="Scrips/menu.js"></script>
+</body>
+
+</html>

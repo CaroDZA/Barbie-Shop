@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/producto.css">
+    <link rel="stylesheet" href="Styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="home.html" class="volver"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+        <h1>PRODUCTO</h1>
+        <p id="mensajeGuardado" class="mensaje-exito"></p>
+        <form id="formulario" action="formulario">
+            <input type="hidden" id="idProducto" name="idProducto">
+            <div class="campo">
+                <i class="fa-solid fa-box"></i>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-align-left"></i>
+                <input type="text" name="descripcion" id="descripcion" placeholder="Descripción">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-cubes"></i>
+                <input type="number" name="stock" id="stock" placeholder="Stock">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-tag"></i>
+                <input type="number" name="precio" id="precio" placeholder="Precio">
+            </div>
+            <div class="acciones-form">
+                <button type="submit" id="botonGuardar">Guardar</button>
+                <button type="button" id="botonCancelar" class="secundario" hidden>Cancelar</button>
+            </div>
+        </form>
+
+        <table id="tablaProductos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Scrips/producto.js"></script>
+    <script src="Scrips/menu.js"></script>
+
+</body>
+
+</html>

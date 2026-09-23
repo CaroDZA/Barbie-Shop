@@ -1,0 +1,172 @@
+body {
+    font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
+    background: #ff69b4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 900px;
+    max-width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+    color: #e0218a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.volver:hover {
+    color: #ff69b4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #e0218a;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #e0218a;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffd6ec;
+    padding-bottom: 5px;
+}
+
+.mensaje-exito {
+    display: none;
+    text-align: center;
+    background: #ffe1f0;
+    color: #e0218a;
+    border: 1px solid #ffb6da;
+    border-radius: 6px;
+    padding: 8px;
+    margin: -8px 0 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mensaje-exito.visible {
+    display: block;
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    color: #e0218a;
+}
+
+.acciones-tabla {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-agregar {
+    background: #e0218a;
+    color: #fff;
+}
+
+.btn-agregar:hover {
+    background: #fd9ee1;
+}
+
+.btn-eliminar {
+    border: 1px solid #f3b6c8;
+    background: #fff0f4;
+    color: #c0264d;
+}
+
+.btn-eliminar:hover {
+    background: #ffd9e3;
+    border-color: #e88ba5;
+}
+
+.total-carrito {
+    text-align: right;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #e0218a;
+}
+
+.acciones-compra {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.btn-principal {
+    background: #e0218a;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+.btn-principal:hover {
+    background: #fd9ee1;
+}
+
+.btn-secundario {
+    background: #f1f1f1;
+    color: #555;
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+.btn-secundario:hover {
+    background: #e2e2e2;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff69b4;
+}

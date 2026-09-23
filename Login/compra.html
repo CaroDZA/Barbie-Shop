@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/compra.css">
+    <link rel="stylesheet" href="Styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="home.html" class="volver"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+        <h1>NUEVA COMPRA</h1>
+        <p id="mensajeGuardado" class="mensaje-exito"></p>
+
+        <!-- Selección de producto -->
+        <div class="seccion-productos">
+            <h2>Productos disponibles</h2>
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Cantidad</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- Carrito / Detalle -->
+        <div class="seccion-carrito">
+            <h2>Detalle de la compra</h2>
+            <table id="tablaCarrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio unit.</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="total-carrito">
+                <strong>Total: $<span id="totalCompra">0</span></strong>
+            </div>
+            <div class="acciones-compra">
+                <button id="btnConfirmarCompra" class="btn-principal">Confirmar Compra</button>
+                <button id="btnCancelarCompra" class="btn-secundario">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scrips/compra.js"></script>
+    <script src="Scrips/menu.js"></script>
+</body>
+
+</html>
